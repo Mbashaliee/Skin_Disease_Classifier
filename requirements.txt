@@ -1,0 +1,4 @@
+tensorflow==2.12.0
+gradio==4.28.3
+pillow
+numpy
