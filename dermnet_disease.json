@@ -1,0 +1,163 @@
+{
+    "Acne and Rosacea Photos": {
+        "description": "Common inflammatory skin conditions affecting the face.",
+        "symptoms": ["Redness", "Pimples", "Pustules", "Scarring"],
+        "causes": ["Hormonal changes", "Bacteria", "Oil production"],
+        "treatments": ["Topical creams", "Antibiotics", "Laser therapy"],
+        "is_contagious": "No"
+    },
+    "Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions": {
+        "description": "Precancerous and cancerous skin growths due to sun exposure.",
+        "symptoms": ["Crusty patches", "Sores", "Lesions that don’t heal"],
+        "causes": ["UV radiation", "Genetic factors"],
+        "treatments": ["Cryotherapy", "Surgical removal", "Topical chemotherapy"],
+        "is_contagious": "No"
+    },
+    "Atopic Dermatitis Photos": {
+        "description": "Chronic itchy skin inflammation often linked to allergies.",
+        "symptoms": ["Itching", "Red rash", "Dry skin"],
+        "causes": ["Genetics", "Immune dysfunction", "Environmental triggers"],
+        "treatments": ["Moisturizers", "Steroid creams", "Antihistamines"],
+        "is_contagious": "No"
+    },
+    "Bullous Disease Photos": {
+        "description": "Blistering disorders often autoimmune in nature.",
+        "symptoms": ["Blisters", "Erosions", "Itching"],
+        "causes": ["Autoimmune conditions", "Genetics"],
+        "treatments": ["Steroids", "Immunosuppressants"],
+        "is_contagious": "No"
+    },
+    "Cellulitis Impetigo and other Bacterial Infections": {
+        "description": "Bacterial skin infections ranging from mild to serious.",
+        "symptoms": ["Redness", "Swelling", "Pus", "Pain"],
+        "causes": ["Staphylococcus", "Streptococcus"],
+        "treatments": ["Antibiotics", "Topical antiseptics"],
+        "is_contagious": "Yes"
+    },
+    "Eczema Photos": {
+        "description": "Inflammatory skin condition causing itchy, red, and dry skin.",
+        "symptoms": ["Itching", "Crusting", "Thickened skin"],
+        "causes": ["Allergens", "Irritants", "Genetic factors"],
+        "treatments": ["Emollients", "Corticosteroids"],
+        "is_contagious": "No"
+    },
+    "Exanthems and Drug Eruptions": {
+        "description": "Widespread rashes caused by viral infections or drug reactions.",
+        "symptoms": ["Widespread rash", "Fever", "Red spots"],
+        "causes": ["Viruses", "Medications"],
+        "treatments": ["Discontinuation of drug", "Antihistamines"],
+        "is_contagious": "No"
+    },
+    "Hair Loss Photos Alopecia and other Hair Diseases": {
+        "description": "Hair disorders including patchy or complete hair loss.",
+        "symptoms": ["Bald patches", "Thinning hair"],
+        "causes": ["Autoimmune diseases", "Genetics", "Stress"],
+        "treatments": ["Minoxidil", "Steroid injections", "Wigs"],
+        "is_contagious": "No"
+    },
+    "Herpes HPV and other STDs Photos": {
+        "description": "Sexually transmitted infections with visible skin symptoms.",
+        "symptoms": ["Sores", "Warts", "Blisters"],
+        "causes": ["Herpes simplex", "HPV", "Bacterial STIs"],
+        "treatments": ["Antivirals", "Cryotherapy"],
+        "is_contagious": "Yes"
+    },
+    "Light Diseases and Disorders of Pigmentation": {
+        "description": "Conditions affecting skin pigmentation.",
+        "symptoms": ["White patches", "Dark spots"],
+        "causes": ["Sun exposure", "Vitiligo", "Post-inflammatory changes"],
+        "treatments": ["Phototherapy", "Topical steroids", "Skin lightening agents"],
+        "is_contagious": "No"
+    },
+    "Lupus and other Connective Tissue diseases": {
+        "description": "Autoimmune disorders affecting skin and organs.",
+        "symptoms": ["Butterfly rash", "Joint pain", "Fatigue"],
+        "causes": ["Immune dysregulation"],
+        "treatments": ["Immunosuppressants", "Corticosteroids"],
+        "is_contagious": "No"
+    },
+    "Melanoma Skin Cancer Nevi and Moles": {
+        "description": "Pigmented skin lesions, including benign moles and malignant melanoma.",
+        "symptoms": ["New moles", "Changes in shape or color", "Bleeding moles"],
+        "causes": ["UV exposure", "Genetic mutations"],
+        "treatments": ["Surgery", "Chemotherapy", "Immunotherapy"],
+        "is_contagious": "No"
+    },
+    "Nail Fungus and other Nail Disease": {
+        "description": "Diseases affecting nail structure and appearance.",
+        "symptoms": ["Thick nails", "Discoloration", "Brittle nails"],
+        "causes": ["Fungi", "Psoriasis", "Trauma"],
+        "treatments": ["Antifungals", "Laser therapy"],
+        "is_contagious": "Yes"
+    },
+    "Poison Ivy Photos and other Contact Dermatitis": {
+        "description": "Allergic reaction from contact with irritants or allergens.",
+        "symptoms": ["Red rash", "Blisters", "Itching"],
+        "causes": ["Plant allergens", "Chemicals"],
+        "treatments": ["Cool compress", "Steroids", "Avoid triggers"],
+        "is_contagious": "No"
+    },
+    "Psoriasis pictures Lichen Planus and related diseases": {
+        "description": "Chronic inflammatory skin conditions with scaling or purple lesions.",
+        "symptoms": ["Plaques", "Scales", "Purple bumps"],
+        "causes": ["Immune dysfunction", "Genetics"],
+        "treatments": ["Topical steroids", "Phototherapy"],
+        "is_contagious": "No"
+    },
+    "Scabies Lyme Disease and other Infestations and Bites": {
+        "description": "Skin conditions caused by parasites or insect bites.",
+        "symptoms": ["Itching", "Red bumps", "Burrows"],
+        "causes": ["Mites", "Ticks", "Insects"],
+        "treatments": ["Antiparasitics", "Antibiotics"],
+        "is_contagious": "Yes"
+    },
+    "Seborrheic Keratoses and other Benign Tumors": {
+        "description": "Non-cancerous growths on the skin.",
+        "symptoms": ["Waxy plaques", "Raised bumps"],
+        "causes": ["Aging", "Sun exposure"],
+        "treatments": ["Cryotherapy", "Curettage"],
+        "is_contagious": "No"
+    },
+    "Systemic Disease": {
+        "description": "Systemic illnesses with skin manifestations.",
+        "symptoms": ["Rashes", "Skin discoloration", "Lesions"],
+        "causes": ["Diabetes", "Liver disease", "Kidney failure"],
+        "treatments": ["Treat underlying disease"],
+        "is_contagious": "No"
+    },
+    "Tinea Ringworm Candidiasis and other Fungal Infections": {
+        "description": "Superficial fungal infections of skin, nails, or mucosa.",
+        "symptoms": ["Red rings", "Itchy patches", "Scaling"],
+        "causes": ["Fungi like dermatophytes and Candida"],
+        "treatments": ["Antifungal creams", "Oral antifungals"],
+        "is_contagious": "Yes"
+    },
+    "Urticaria Hives": {
+        "description": "Red, itchy welts caused by allergic reactions or unknown triggers.",
+        "symptoms": ["Wheals", "Swelling", "Itching"],
+        "causes": ["Allergies", "Stress", "Idiopathic"],
+        "treatments": ["Antihistamines", "Avoidance of triggers"],
+        "is_contagious": "No"
+    },
+    "Vascular Tumors": {
+        "description": "Benign or malignant growths from blood vessels.",
+        "symptoms": ["Red or purple nodules", "Bleeding"],
+        "causes": ["Congenital", "Hormonal"],
+        "treatments": ["Laser treatment", "Surgery"],
+        "is_contagious": "No"
+    },
+    "Vasculitis Photos": {
+        "description": "Inflammation of blood vessels often autoimmune in origin.",
+        "symptoms": ["Purple spots", "Ulcers", "Pain"],
+        "causes": ["Autoimmune", "Infections", "Medications"],
+        "treatments": ["Steroids", "Immunosuppressants"],
+        "is_contagious": "No"
+    },
+    "Warts Molluscum and other Viral Infections": {
+        "description": "Viral infections causing growths on the skin.",
+        "symptoms": ["Warts", "Domed lesions"],
+        "causes": ["HPV", "Molluscum contagiosum virus"],
+        "treatments": ["Cryotherapy", "Topical agents"],
+        "is_contagious": "Yes"
+    }
+}

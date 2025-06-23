@@ -1,0 +1,6 @@
+tensorflow>=2.10.0
+numpy
+pillow
+gtts
+deep-translator
+gradio>=4.0.0
