@@ -17,7 +17,7 @@ SkinVision is an AI-powered application that classifies 23 different skin condit
 ✅ Built with TensorFlow (MobileNetV2), Gradio, and deployed on Hugging Face Spaces
 
 🚀 Try It Live
-👉 (Launch on Hugging Face)[https://m3ash-skin-disease-classifier.hf.space/?logs=container&__theme=system&deep_link=Alw9-u6V2J0]
+👉 [Launch on Hugging Face](https://m3ash-skin-disease-classifier.hf.space/?logs=container&__theme=system&deep_link=Alw9-u6V2J0)
 
 🧠 Model Information
 Architecture: MobileNetV2 (Transfer Learning)
