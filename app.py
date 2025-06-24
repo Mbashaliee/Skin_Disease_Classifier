@@ -69,17 +69,6 @@ tts_lang_codes = {
 }
 
 # === TTS Function ===
-def generate_tip_audio(disease, language):
-    tip = original_tips.get(disease, "Maintain good hygiene and seek professional care.")
-    sentence = f"This disease is most likely {disease}. The health tip for this predicted disease is: {tip}. Contact a dermatologist for better treatment."
-    translated_tip = GoogleTranslator(source='en', target=tts_lang_codes[language]).translate(sentence)
-
-    tts = gTTS(text=translated_tip, lang=tts_lang_codes[language])
-    temp_audio = tempfile.NamedTemporaryFile(delete=False, suffix=".mp3")
-    tts.save(temp_audio.name)
-    return translated_tip, temp_audio.name
-
-# === Classifier Function ===
 def generate_tip_audio(disease, language, translated_tip):
     message = (
         f"This disease is most likely to be {disease}. "
@@ -91,16 +80,15 @@ def generate_tip_audio(disease, language, translated_tip):
     tts.save(temp_audio.name)
     return temp_audio.name
 
+# === Prediction Function ===
 def predict_and_translate(img, language):
     img = img.resize((224, 224))
     img_array = image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0) / 255.0
 
     prediction = model.predict(img_array)[0]
-    top_indices = prediction.argsort()[-3:][::-1]  # Top 3 predictions
-    top_probs = [(class_names[i], int(prediction[i] * 100)) for i in top_indices]
-
-    most_likely_class, most_likely_prob = top_probs[0]
+    predicted_index = np.argmax(prediction)
+    most_likely_class = class_names[predicted_index]
 
     # Translate tip
     tip_text = original_tips.get(most_likely_class, "Maintain good hygiene and seek professional care.")
@@ -118,17 +106,12 @@ def predict_and_translate(img, language):
     # Prepare Audio
     audio_path = generate_tip_audio(most_likely_class, language, translated_tip)
 
-    # Format top predictions string
-    prediction_summary = "\n".join([f"{name}: {prob}%" for name, prob in top_probs])
-
     return (
-        f"This disease is most likely to be: {most_likely_class} ({most_likely_prob}%)",
-        prediction_summary,
+        f"This disease is most likely to be: {most_likely_class}",
         meta_text,
         f"The health tip for this predicted disease is:\n{translated_tip}",
         audio_path
     )
-
 
 # === AI Assistant Bot ===
 def ai_assistant_bot(message):
@@ -155,7 +138,6 @@ skin_disease_interface = gr.Interface(
     ],
     outputs=[
         gr.Text(label="Most Likely Disease Prediction"),
-        gr.Text(label="Top 3 Predictions with Probabilities"),
         gr.Text(label="Disease Metadata"),
         gr.Text(label="Health Tip (Translated)"),
         gr.Audio(label="Text-to-Speech Health Tip")
@@ -172,7 +154,8 @@ chatbot_interface = gr.Interface(
 )
 
 # === Combined UI ===
-gr.TabbedInterface(
+demo = gr.TabbedInterface(
     [skin_disease_interface, chatbot_interface],
     ["📷 Skin Classifier", "🤖 Chatbot Assistant"]
-).launch()
+)
+demo.launch()
