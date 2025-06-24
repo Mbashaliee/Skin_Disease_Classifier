@@ -1,6 +1,7 @@
-tensorflow>=2.10.0
-numpy
-pillow
+tensorflow
+gradio
 gtts
 deep-translator
-gradio>=4.0.0
+Pillow
+openai
+numpy
