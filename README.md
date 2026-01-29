@@ -16,7 +16,7 @@
 
 ## 🚀 Try It Live
 
-👉 [Launch on Hugging Face]([deep](https://m3ash-skin-disease-classifier.hf.space/?logs=container&__theme=system&deep)) 
+👉 [Launch on Hugging Face](https://m3ash-skin-disease-classifier.hf.space/?logs=container&__theme=system&deep) 
 
 ---
 
