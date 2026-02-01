@@ -1,0 +1,7 @@
+flask==3.0.0
+flask-cors==4.0.0
+tensorflow==2.15.0
+gtts==2.5.0
+deep-translator==1.11.4
+Pillow==10.2.0
+numpy==1.26.3
